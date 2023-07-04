@@ -18,30 +18,30 @@ header form.contenedor-search{
    }
 
 
-header form.contenedor-search input{
+   header form.contenedor__search input {
   display: block;
   }
 
 
 
-header form .contenedor-search button{
+  header form .contenedor__search button {
 margin-top: 2px;
 border-radius: 3px;
 padding: 2px;
 background: none;
 cursor: pointer;
 }
-header form.contenedor-search button i{}
+header form.contenedor__search button i{}
 
 /*COMPRA*/
-header .contenedor-compra{
+header .contenedor-compra {
     text-align: center;
     margin-top: 8px;
 }
 
-header .contenedor-compra i{}
+header .contenedor-compra i {}
 
-header .contenedor-compra span.text{
+header .contenedor-compra span.text {
     font-weight: 300;
     font-size: .7rem;
 }

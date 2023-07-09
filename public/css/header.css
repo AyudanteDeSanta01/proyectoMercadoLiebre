@@ -18,13 +18,13 @@ header form.contenedor-search{
    }
 
 
-   header form.contenedor__search input {
+header form.contenedor__search input {
   display: block;
   }
 
 
 
-  header form .contenedor__search button {
+header form .contenedor__search button {
 margin-top: 2px;
 border-radius: 3px;
 padding: 2px;
@@ -51,14 +51,18 @@ header .contenedor-menu {
 
 }
 
-header .contenedor-menu ul {list-style: none;padding: 0;}
+header .contenedor-menu ul {
+    list-style: none;
+    padding: 0;}
 
 header .contenedor-menu ul li {}
 
 header .contenedor-menu ul li a {}
 
 /*OPCIONNES*/
-header .contenedor-opciones {}
+header .contenedor-opciones {
+    margin-top: 8px;
+}
 
 header .contenedor-opciones ul {
     list-style: none;

@@ -1,0 +1,46 @@
+.footer_home {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*STYLES ICONS*/
+
+.icono__cardFooter {
+    font-family: var(--tipografia);
+    font-size: 2em;
+    margin: 80px 0 10px;
+    text-align: center;
+    color: var(--celeste);
+}
+
+.icono__giftFooter {
+    font-family: var(--tipografia);
+    font-size: 2em;
+    margin: 80px 0 10px;
+    text-align: center;
+    color: var(--celeste);
+}
+
+.icono__segurityFooter {
+    font-family: var(--tipografia);
+    font-size: 2em;
+    margin: 80px 0 10px;
+    text-align: center;
+    color: var(--celeste);
+}
+
+/*STYLES FONTS FOOTER*/
+.footer__home__section-pago {
+    font-size: var(--decripciones);
+    margin-top: 10 px;
+}
+
+.footer__home__section {
+    font-size: var(--cuerpos-de-texto);
+}
+
+.footer_home--copy {
+    font-size: var(--cuerpos-de-texto);
+    margin: 50px 30px;
+    text-align: left;
+}

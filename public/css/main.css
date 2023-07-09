@@ -1,0 +1,27 @@
+/*MAIN FONT SIZE*/
+
+.contenedor__home__titular {
+    font-size: var(--titulares);
+}
+
+.contenedor__home__article-img {
+    width: 50%;
+    height: 0 auto;
+    /* Ajusta automáticamente la altura para mantener la proporción */
+}
+.contenedor__home__article-precio {
+    font-size: var(--precios);
+    }
+.contenedor__home__article-off{ 
+   font-size: var(--descuentos);
+}
+
+.contenedor__home__article-descripcion{
+ font-size: var(--decripciones);
+}
+
+.contenedor__home__article-descripcion {}
+--cuerpos-de-texto: 12px;
+
+
+

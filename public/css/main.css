@@ -2,26 +2,67 @@
 
 .contenedor__home__titular {
     font-size: var(--titulares);
+    
 }
 
 .contenedor__home__article-img {
     width: 50%;
-    height: 0 auto;
-    /* Ajusta automáticamente la altura para mantener la proporción */
+    height: 0 auto;  /* Ajusta automáticamente la altura para mantener la proporción */
 }
 .contenedor__home__article-precio {
     font-size: var(--precios);
-    }
+       }
+       
 .contenedor__home__article-off{ 
-   font-size: var(--descuentos);
-}
+      font-size: var(--descuentos);
+      color:  #39b54a ;
+      
+ }
 
 .contenedor__home__article-descripcion{
- font-size: var(--decripciones);
+    margin-top: 20px;
+    font-size: var(--decripciones);
+
 }
 
-.contenedor__home__article-descripcion {}
---cuerpos-de-texto: 12px;
+.contenedor__home__section{
+    text-align: center;
+}
+
+/*SECCION MAIN*/
+
+main.home {
+    margin: 0 auto;
+    width: 90%;
+}
+/*PRODUCTS*/
+
+.contenedor__home__article {
+    margin-bottom: 10px;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+/*PRODUCTS: caja interna dentro de la caja general */
+
+.contenedor__home__article-inner {
+    border: none;
+    padding: 0;
+    /*text-align: center;*/
+}
+
+/*TRUCK*/
+.contenedor__home__article-inner i {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--blanco);
+    color: var(--verde);
+    text-align: center;
+    line-height:op 40px;
+    border: 2px solid lightgreen;
+  }
 
 
 

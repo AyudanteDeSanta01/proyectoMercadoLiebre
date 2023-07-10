@@ -19,7 +19,7 @@ header form.contenedor-search{
 
 
 header form.contenedor__search input {
-  display: block;
+  display: inline-block;
   }
 
 

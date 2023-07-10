@@ -1,14 +1,23 @@
-*{
+* {
     font-family: var(--tipografia);
-    margin: 0;
+       margin: 0;
 }
 
 a {
-color: rgb(58,58,58);
-text-decoration: none;
+    color: rgb(58, 58, 58);
+    text-decoration: none;
 }
 
 ul {
     padding: 0;
     list-style: none;
+}
+
+p {
+    font-size: var(--cuerpos-de-texto);
+}
+
+*STYLES FONTS FOOTER*/ h3 {
+    font-size: var(--decripciones);
+    margin-top: 10 px;
 }

@@ -1,9 +1,22 @@
-.footer_home {
+.footer__home {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 20px auto;
+    width: 90%;
+    background-color:  var(--blanco);
+}
+/*STYLES FONTS FOOTER*/ 
+
+.footer__home__section h3 {
+    font-size: var(--decripciones);
+    margin-top: 10 px;
+}
+
+.footer_home__section p {
+    font-size: var(--cuerpos-de-texto);
 }
 
 /*STYLES ICONS*/
+
 
 .icono__cardFooter {
     font-family: var(--tipografia);

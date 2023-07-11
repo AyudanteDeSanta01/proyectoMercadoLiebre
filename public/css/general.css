@@ -1,6 +1,7 @@
 * {
     font-family: var(--tipografia);
        margin: 0;
+       padding: 0;
 }
 
 a {
@@ -13,9 +14,6 @@ ul {
     list-style: none;
 }
 
-p {
-    font-size: var(--cuerpos-de-texto);
-}
 
 *STYLES FONTS FOOTER*/ h3 {
     font-size: var(--decripciones);

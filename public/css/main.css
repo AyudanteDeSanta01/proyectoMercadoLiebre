@@ -34,6 +34,10 @@
 /*SECCION MAIN*/
 
 main.home {
+  
+}
+
+.contenedor__home__section{
     margin: 0 auto;
     width: 90%;
 }

@@ -1,7 +1,9 @@
 * {
-    font-family: var(--tipografia);
+   
        margin: 0;
        padding: 0;
+       box-sizing: border-box;
+       font-family: var(--tipografia);
 }
 
 a {
@@ -15,10 +17,10 @@ ul {
 }
 
 
-*STYLES FONTS FOOTER*/ h3 {
+/*STYLES FONTS FOOTER h3 {
     font-size: var(--decripciones);
     margin-top: 10 px;
-}
+}*/
 img {
     max-width: 100%;
 }

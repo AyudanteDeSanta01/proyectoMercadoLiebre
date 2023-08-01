@@ -2,16 +2,43 @@ header {
     background-color: var(--amarillo);
     padding: 30px 10px 20px;
 }
+header div.contenedor__home__header{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 /* LOGO*/
 header figure {
-    width: 200px;
+    width: 50%;
     display: inline-block;
 }
 
 header figure img {
     width: 100%;
+    height: auto;
+    padding: 15px;
+    text-align: left;
+  }
+  
+ div .search{
+    width: 50%;
+    padding: 10px;
 }
+div.search__container input{ 
+    position: relative;
+}
+
+div.search__container button
+{
+position: absolute;
+top: 0px;
+right: 0px;
+width: 30px;
+height: 100%;
+background-color: transparent;
+border: none;}
 
 /*BUSCADOR*/
 header form.contenedor-search {}
@@ -103,3 +130,10 @@ header button.burger-menu {
 }
 
 header button.burger-menu i {}
+/*QUARY*/
+
+@media (min-width: 481px){
+header div.conteiner__home__header div.search {
+    width: 200px;
+}
+}

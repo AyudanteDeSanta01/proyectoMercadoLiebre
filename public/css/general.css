@@ -1,13 +1,12 @@
 * {
-   
-       margin: 0;
-       padding: 0;
-       box-sizing: border-box;
-       font-family: var(--tipografia);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--tipografia);
 }
 
 a {
-    color: rgb(58, 58, 58);
+   /* color: rgb(58, 58, 58);*/
     text-decoration: none;
 }
 
@@ -23,4 +22,4 @@ ul {
 }*/
 img {
     max-width: 100%;
-}
+ }

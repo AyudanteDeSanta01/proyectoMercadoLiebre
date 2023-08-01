@@ -1,43 +1,75 @@
 header {
-   
     background-color: var(--amarillo);
     padding: 30px 10px 20px;
-
 }
+header div.contenedor__home__header{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 /* LOGO*/
 header figure {
-    width: 200px;
+    width: 50%;
     display: inline-block;
 }
 
 header figure img {
-    width:100%;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    text-align: left;
+  }
+  
+ div .search{
+    width: 50%;
+    padding: 10px;
 }
+div.search__container input{ 
+    position: relative;
+}
+
+div.search__container button
+{
+position: absolute;
+top: 0px;
+right: 0px;
+width: 30px;
+height: 100%;
+background-color: transparent;
+border: none;}
+
 /*BUSCADOR*/
-header form.contenedor-search{
-   }
+header form.contenedor-search {}
 
 
 header form.contenedor__search input {
-  display: inline-block;
+    display: inline-block;
 }
 
 
 
 header form .contenedor__search button {
-margin-top: 2px;
-border-radius: 3px;
-padding: 2px;
-background: none;
-cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
 }
-header form.contenedor__search button i{}
+
+header form.contenedor__search button i {
+    margin: 0;
+    padding: 0;
+    font-size: .8rem;
+    
+}
 
 /*COMPRA*/
 header .contenedor-compra {
     text-align: center;
-    margin: 5px;
-    padding: 10px 0px;
+    margin-top: 8px;
 }
 
 header .contenedor-compra i {}
@@ -45,27 +77,28 @@ header .contenedor-compra i {}
 header .contenedor-compra span.text {
     font-weight: 300;
     font-size: .7rem;
-  
-        
 }
 
 /*MENU*/
 header .contenedor-menu {
-display: none;
+    list-style: none;
+    padding: 0;
+
 }
 
-header .contenedor-menu ul {
+/*header .contenedor-menu ul {
     list-style: none;
-    padding: 0;}
+    padding: 0;}*/
 
-header .contenedor-menu ul li {}
+header .contenedor-menu ul,
+header .contenedor-opciones ul {
+    display: none;
+}
 
-header .contenedor-menu ul li a {}
 
 /*OPCIONNES*/
 header .contenedor-opciones {
     margin-top: 8px;
-    display: none;
 }
 
 header .contenedor-opciones ul {
@@ -75,30 +108,32 @@ header .contenedor-opciones ul {
 
 header .contenedor-opciones ul li {}
 
-header .contenedor-opciones ul li a {
-
-}
+header .contenedor-opciones ul li a {}
 
 header .contenedor-opciones ul li a i {
     margin-left: 7px;
 }
 
 /*BURGER MENU*/
-header .container.burger-menu{
-  
+header .container.burger-menu {
     text-align: center;
-
 }
 
-header button.burger-menu{
-    border:none ;
+header button.burger-menu {
+    border: none;
     background-color: var(--celeste);
     color: var(--blanco);
     border-radius: 4px;
     padding: 5px 8px;
     margin: 0 auto;
-    display: inherit; 
+    display: inherit;
 }
-header button.burger-menu i{}
 
+header button.burger-menu i {}
+/*QUARY*/
 
+@media (min-width: 768px){
+header div.conteiner__home__header div.search {
+    width: 200px;
+}
+}

@@ -6,110 +6,155 @@
     width: 100%;
 }
 
+body.home{
+    background-color: #ebebeb;
+}
+
 
 /*MAIN FONT SIZE*/
-
 .contenedor__home__titular {
     font-size: var(--titulares);
     padding: 1rem 0rem;
-
 }
 
 .contenedor__home__article-img {
-    width: 50%;
     height: 0 auto;
-    /* Ajusta automáticamente la altura para mantener la proporción */
-}
+    object-fit: cover; /* Para asegurar que la imagen ocupe todo el espacio del contenedor sin deformarse */
+    }
 
 .contenedor__home__article-precio {
+
     font-size: var(--precios);
+    margin-right: 1rem;
+    /* Agrega espacio entre el ícono y el precio */
+    display: inline;
 }
 
 .contenedor__home__article-off {
+    display: inline;
     font-size: var(--descuentos);
-    color: #39b54a;
+    font-weight: 700;
+    color: #49b54a;
 
 }
 
 .contenedor__home__article-descripcion {
-    margin-top: 20px;
+    margin-top: 15px;
     font-size: var(--decripciones);
+    /* padding: 15px 0px;
+    margin-left: 1rem;*/
 
-}
-
-.contenedor__home__section {
-    text-align: center;
 }
 
 /*SECCION MAIN*/
-
-.home {}
-
 .contenedor__home__section {
     margin: 0 auto;
     width: 90%;
+    text-align: center;
+    padding: 15px;
 
 }
+
 
 /*PRODUCTS*/
+.contenedor__home__article-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .contenedor__home__article {
+    width: 100%;
+    /* Móvil: Mostrar un artículo por fila */
     margin-bottom: 10px;
-
-    padding: 15px;
-}
-
-.contenedor__home__article-img {
-    border-top: 1px solid #ebebeb;
-}
+    padding: 10px;
+    border-bottom: 0 solid var(--grisClaro);
+    box-sizing: border-box;
+    background-color:#ffff;
+   }
 
 /*PRODUCTS: caja interna dentro de la caja general*/
-
 .contenedor__home__article-inner {
-    border: none;
-    padding: 0;
+    /* border: none;*/
+    padding: 1rem;
+    border-top: 1px var(--grisClaro);
     position: relative;
-    text-align: center;
-}
+    text-align: left;
+       }
 
 /*TRUCK*/
-
 .contenedor__home__article-inner i {
-    /*display: block*/
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: var(--blanco);
     color: var(--verde);
     text-align: center;
-    /*line-height: op 40px;*/
-    border: 2px solid var(--verde);
-    /*padding: .7rem;*/
-
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    border: 3px solid var(--verde);
+    padding: .2rem;
+    right: 0;
+    transform: translateY(-50%); 
+    align-items: center;
+    top: -2px;
+    right:10px ;
+     font-size: large;
 }
+.contenedor__home__article-inner i + * {
+    margin-top: 10px; /* Ajusta el valor según el espacio deseado */
+} 
 
 /* Punto de corte para tablets */
 
-@media (min-width: 361px) {
-    .contenedor__home__article-descripcion {
-        ;
-    }
-
+@media (min-width: 768px) {
+    
     header button.burger-menu {
         display: none;
     }
-}
+    .contenedor__home__article-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    /* Para pantallas de tablet, mostrar dos artículos por fila */
+    .contenedor__home__article {
+       /* width: 50%;
+        margin: auto;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);*/
+        width: calc(50% - 20px); /* Ajusta el ancho para que haya espacio entre los artículos */
+        margin-bottom: 20px; /* Ajusta el margen inferior para separar las filas */
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+          }
+          
+
+.contenedor__home__article-img{
+    display: flex;
+    justify-content: center;
+    padding: 0 auto;
+    border-bottom: 2px solid silver;
+    }
 
 
 /* Punto de corte para desktop */
 
-@media (min-width: 769px) {
-    .contenedor__home__article-img {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-
-    header button.burger-menu {
+@media (min-width:1000px) {
+     header button.burger-menu {
         display: none;
     }
+    .contenedor__home__article-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
+         /* Para pantallas de escritorio, mostrar cuatro artículos por fila */
+    .contenedor__home__article {
+        width: calc(25% - 5px); /* Ajusta el ancho para que haya espacio entre los artículos */
+        margin-bottom: 20px; /* Ajusta el margen inferior para separar las filas */
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
 }
+

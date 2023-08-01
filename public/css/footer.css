@@ -1,10 +1,10 @@
 .footer__home {
     text-align: center;
-    margin-bottom: 20px auto;
-    width: 90%;
-    background-color:  var(--blanco);
+    width: 100%;
+    background-color: #ffff;
 }
-/*STYLES FONTS FOOTER*/ 
+
+/*STYLES FONTS FOOTER*/
 
 .footer__home__section h3 {
     font-size: var(--decripciones);
@@ -13,28 +13,14 @@
 
 .footer_home__section p {
     font-size: var(--cuerpos-de-texto);
+    color: var(--grisOscuro);
+
 }
 
 /*STYLES ICONS*/
 
 
-.icono__cardFooter {
-    font-family: var(--tipografia);
-    font-size: 2em;
-    margin: 80px 0 10px;
-    text-align: center;
-    color: var(--celeste);
-}
-
-.icono__giftFooter {
-    font-family: var(--tipografia);
-    font-size: 2em;
-    margin: 80px 0 10px;
-    text-align: center;
-    color: var(--celeste);
-}
-
-.icono__segurityFooter {
+.icono__iconFooter {
     font-family: var(--tipografia);
     font-size: 2em;
     margin: 80px 0 10px;
@@ -46,4 +32,17 @@
     font-size: var(--cuerpos-de-texto);
     margin: 50px 30px;
     text-align: left;
+}
+
+/* DESKTOP */
+@media (min-width:1024px) {
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    section.footer__home__section {
+        width: 30%;
+    }
 }
